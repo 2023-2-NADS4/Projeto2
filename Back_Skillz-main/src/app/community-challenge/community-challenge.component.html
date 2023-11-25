@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="body">
+    <div *ngIf="isLoading">
+        <app-loading></app-loading>
+      </div>
+    <div routerLink="/community">
+        <img src="../../assets/tech-user-coding-woman.png" alt="">
+    </div>
+    <div class="content">
+        <h1>Desafio da Comunidade</h1>
+        <p>Imagine esta situação emocionante: O desenvolvedor sênior teve que se ausentar, 
+            deixando a tela inicial de um site de ﬁnanças do cliente americano pela metade. 
+            Agora, como estagiário front-end, a responsabilidade de ﬁnalizar essa página 
+            crucial está totalmente em suas mãos. O prazo está batendo à porta, mas não se 
+            preocupe, o designer já deixou todas as diretrizes detalhadas no Figma. Você só 
+            precisa seguir o design cuidadosamente.
+            Mas espere, há mais! O desenvolvedor também deixou uma lista de tarefas para 
+            você:</p>
+            <p>
+                1. Ajustar o espaçamento dos ícones à direita do header;
+            </p>
+            <p>2. Garantir que a img do article ﬁque exatamente como no Figma;</p>
+            <p>3. Acertar o tamanho das fontes, especialmente do h1;</p>
+            <p>4. Dar vida ao design do botão, que ainda aguarda suas mãos habilidosas.</p>
+            <p>Este é o seu momento de brilhar, de mostrar suas habilidades de desenvolvedor e, 
+                quem sabe, conquistar uma promoção para sair da posição de estagiário. Boa 
+                sorte e, após concluir o desaﬁo, não se esqueça de nos fornecer seu valioso 
+                feedback! Estamos ansiosos para ver seu trabalho incrível.</p>
+        <div class="btn">
+            <button (click)="await()">quero participar</button>
+        </div>
+    </div>
+</div>
